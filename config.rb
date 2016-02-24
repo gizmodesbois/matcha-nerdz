@@ -101,6 +101,11 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  
+  activate :asset_hash
+  activate :minify_javascript
+  activate :css
+  activate :gzip
 end
 
 activate :deploy do |deploy|
